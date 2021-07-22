@@ -23,6 +23,11 @@ a {
 /* Top line */
 
 /* Logo*/
+.container-header {
+  text-align: center;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
 .site {
   color: var(--logo-studio);
   font-weight: bold;
@@ -50,6 +55,10 @@ a {
 }
 
 /* Contacts */
+.contacts {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .contacts .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -98,20 +107,27 @@ a {
 /* Content with index */
 /*  */
 
-/* Main title */
-.main {
+/* Herov title */
+.container-herov {
   background-color: var(--background-color);
-  text-align: center;
 }
-.main .title {
+.herov {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid tomato;
+  text-align: center;
+  /* padding: 200px auto 280px; */
+}
+.herov .title {
+  margin-top: 0;
   text-transform: uppercase;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
 }
-
-.main .button {
+.herov .button {
   color: var(--primary-white-color);
   background-color: var(--accent-coolor);
   font-weight: bold;
@@ -119,9 +135,12 @@ a {
   line-height: 1.9;
   cursor: pointer;
   text-align: center;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 1px solid var(--accent-coolor);
 }
-.main .button:hover,
-.main .button:focus {
+.herov .button:hover,
+.herov .button:focus {
   background-color: #188ce8;
 }
 /* Company credo */
@@ -173,11 +192,18 @@ a {
 /*  */
 
 /* Buttons */
+.buttons {
+  width: 1200px;
+  outline: 2px solid tomato;
+}
 .buttons .filter {
+  padding: 6px 22px;
   background-color: var(--primary-button-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 .buttons .filter:hover,
 .buttons .filter:focus,
