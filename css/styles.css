@@ -7,6 +7,8 @@
   --primary-white-color: #ffffff;
   --secondary-background-color: #2f303a;
   --primary-button-color: #f5f4fa;
+  --shadow-cards: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 body {
   color: var(--primary-color);
@@ -23,11 +25,17 @@ a {
 /* Top line */
 
 /* Logo*/
+
 .container-header {
-  text-align: center;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
   width: 1200px;
-  outline: 2px solid tomato;
 }
+
 .site {
   color: var(--logo-studio);
   font-weight: bold;
@@ -35,36 +43,61 @@ a {
   line-height: 1.2;
   font-family: "Raleway", sans-serif;
 }
+
 .site .web {
   color: var(--accent-coolor);
 }
 
 /* Nav-links */
+
+.nav-links {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav-links .item + .item {
+  margin-left: 50px;
+}
+
 .nav-links .link {
+  display: block;
+  padding: 12px;
+
   color: var(--primary-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
 }
+
 .nav-links .location {
   color: var(--accent-coolor);
 }
+
 .nav-links .link:hover,
 .nav-links .link:focus {
   color: var(--accent-coolor);
 }
 
 /* Contacts */
+
 .contacts {
-  margin-top: 0;
-  margin-bottom: 0;
+  display: flex;
+  margin-left: auto;
 }
+
+.contacts .item + .item {
+  margin-left: 50px;
+}
+
 .contacts .link {
+  padding: 12px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
 }
+
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-coolor);
@@ -110,78 +143,154 @@ a {
 /* Herov title */
 .container-herov {
   background-color: var(--background-color);
+  margin-bottom: 94px;
 }
+
 .herov {
   margin-left: auto;
   margin-right: auto;
+  padding: 200px 20px;
   width: 1200px;
-  outline: 2px solid tomato;
   text-align: center;
-  /* padding: 200px auto 280px; */
 }
+
 .herov .title {
-  margin-top: 0;
+  margin: 0;
+  padding-bottom: 30px;
   text-transform: uppercase;
+
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
 }
+
 .herov .button {
+  padding: 10px 32px;
+  text-align: center;
+
   color: var(--primary-white-color);
   background-color: var(--accent-coolor);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
   cursor: pointer;
-  text-align: center;
-  padding: 10px 32px;
   border-radius: 4px;
   border: 1px solid var(--accent-coolor);
 }
+
 .herov .button:hover,
 .herov .button:focus {
   background-color: #188ce8;
 }
+
 /* Company credo */
+
+.credo {
+  /* outline: 2px solid yellow; */
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto 94px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  align-items: center;
+  width: 1200px;
+}
+
+.container-credo:not(:last-child) {
+  margin-right: 30px;
+}
+
 .credo .title {
+  padding-bottom: 10px;
+  margin: 0;
+
   color: var(--primary-color);
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
 }
+
 .credo .text {
+  padding-right: 30px;
+
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.7;
 }
+
 /* Company direction */
 .direction {
+  width: 1200px;
+  margin: 0 auto 94px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.direction .titel {
+  margin: 0 auto 50px;
   color: var(--primary-color);
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
 }
+
+.container-direction {
+  outline: 2px solid green;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.direction-img:not(:last-child) {
+  padding-right: 30px;
+}
+
 /* Team */
 .team {
   background-color: #f5f4fa;
 }
+
 .team .title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin: 0;
+
   color: var(--primary-color);
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
 }
+
+.conteiner-team {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.summary {
+  margin-bottom: 94px;
+  box-shadow: var(--shadow-cards);
+  border-radius: 0px 0px 4px 4px;
+}
+.summary:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team .worker {
+  text-align: center;
   color: var(--primary-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
 }
+
 .team .position {
+  text-align: center;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.2;
@@ -196,6 +305,7 @@ a {
   width: 1200px;
   outline: 2px solid tomato;
 }
+
 .buttons .filter {
   padding: 6px 22px;
   background-color: var(--primary-button-color);
@@ -205,6 +315,7 @@ a {
   border: 1px solid transparent;
   border-radius: 4px;
 }
+
 .buttons .filter:hover,
 .buttons .filter:focus,
 .buttons .location {
@@ -212,6 +323,7 @@ a {
   color: var(--primary-white-color);
   cursor: pointer;
 }
+
 /* Portfolio */
 .publication .title {
   color: var(--primary-color);
@@ -219,6 +331,7 @@ a {
   font-size: 18px;
   line-height: 2;
 }
+
 .publication .category {
   color: var(--primary-text-color);
   font-size: 16px;
