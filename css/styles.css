@@ -10,19 +10,48 @@
   --shadow-cards: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
 body {
   color: var(--primary-color);
   background: var(--primary-white-color);
   font-family: "Roboto", sans-serif;
 }
+
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
+
 img {
   display: block;
+}
+
+/* Visually hidden */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Top line */
@@ -32,12 +61,10 @@ img {
 .container-header {
   display: flex;
   padding: 0 15px;
-  /* padding-left: 20px;
-  padding-right: 20px; */
   margin-left: auto;
   margin-right: auto;
   align-items: center;
-  width: 1200px;
+  width: 1170px;
 }
 
 .nav-site {
@@ -59,7 +86,6 @@ img {
 
 .nav-links {
   display: flex;
-  margin: 0;
   padding-left: 93px;
 }
 
@@ -156,15 +182,14 @@ img {
 
 .herov {
   margin: 0 auto 40px;
-  /* margin-left: auto;
-  margin-right: auto; */
   padding: 200px 15px;
-  width: 1200px;
+  width: 1170px;
   text-align: center;
 }
 
 .herov .title {
-  margin: 0;
+  max-width: 696px;
+  margin: 0 auto;
   padding-bottom: 30px;
   text-transform: uppercase;
 
@@ -198,32 +223,37 @@ img {
 .credo {
   /* outline: 2px solid yellow; */
   display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 15px;
   margin: 0 auto 94px;
-  /* margin-left: auto;
-  margin-right: auto; */
   align-items: center;
-  width: 1200px;
+  width: 1170px;
 }
 
-.container-credo:not(:last-child) {
+.container-credo {
+  display: flex;
+}
+
+.credo-cards {
+  width: 270px;
+  height: 101px;
+}
+.credo-cards:not(:last-child) {
   margin-right: 30px;
 }
 
 .credo .title {
-  padding-bottom: 10px;
-  margin: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 
   color: var(--primary-color);
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
-  text-transform: uppercase;
 }
 
 .credo .text {
-  padding-right: 30px;
+  padding-right: 20px;
+  height: 75px;
 
   color: var(--primary-text-color);
   font-size: 14px;
@@ -231,42 +261,44 @@ img {
 }
 
 /* Company direction */
+
 .direction {
-  width: 1200px;
+  width: 1170px;
   margin: 0 auto 94px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 15px;
 }
 
 .direction .titel {
   margin: 0 auto 50px;
+  text-align: center;
+
   color: var(--primary-color);
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
-  text-align: center;
 }
 
 .container-direction {
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
   display: flex;
-  margin: 0 auto;
-  padding: 0;
+  flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
 .direction-img:not(:last-child) {
   padding-right: 30px;
+  /* width: 100%;
+  height: auto; */
+  /* margin-right: auto; */
 }
 
 /* Team */
 .team {
   background-color: #f5f4fa;
+  padding: 94px 0;
 }
 
 .team .title {
-  padding-top: 94px;
-  padding-bottom: 50px;
-  margin: 0;
+  margin-bottom: 50px;
 
   color: var(--primary-color);
   font-weight: bold;
@@ -275,14 +307,20 @@ img {
   text-align: center;
 }
 
-.conteiner-team {
+.container-team {
+  /* outline: 2px solid darkblue; */
   display: flex;
-  width: 1200px;
+  width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
+}
+
+.cards-team {
+  display: flex;
 }
 
 .summary {
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
   box-shadow: var(--shadow-cards);
   border-radius: 0px 0px 4px 4px;
 }
@@ -290,15 +328,20 @@ img {
   margin-right: 30px;
 }
 
-.team .worker {
+.summary .worker {
   text-align: center;
+  /* padding-top: 30px;
+  padding-bottom: 10px; */
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: var(--primary-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
 }
 
-.team .position {
+.summary .position {
+  margin-bottom: 30px;
   text-align: center;
   color: var(--primary-text-color);
   font-size: 16px;
