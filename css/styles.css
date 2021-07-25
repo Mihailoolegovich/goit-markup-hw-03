@@ -21,6 +21,9 @@ ul {
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+}
 
 /* Top line */
 
@@ -28,14 +31,18 @@ a {
 
 .container-header {
   display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 15px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   width: 1200px;
 }
 
+.nav-site {
+  display: flex;
+}
 .site {
   color: var(--logo-studio);
   font-weight: bold;
@@ -52,7 +59,8 @@ a {
 
 .nav-links {
   display: flex;
-  margin-left: 93px;
+  margin: 0;
+  padding-left: 93px;
 }
 
 .nav-links .item + .item {
@@ -147,9 +155,10 @@ a {
 }
 
 .herov {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 200px 20px;
+  margin: 0 auto 40px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding: 200px 15px;
   width: 1200px;
   text-align: center;
 }
@@ -171,7 +180,7 @@ a {
 
   color: var(--primary-white-color);
   background-color: var(--accent-coolor);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   cursor: pointer;
