@@ -7,57 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Web Studio</title>
 </head>
 
 <body>
     <!-- Top line -->
-    <header>
-        <!-- Logo -->
-        <div class="background-header">
-            <div class="container">
-                <div class="flex">
-                    <nav class="nav-site">
-                        <a class="site" href="./index.html">
-                            <span class="web">Web</span>Studio</a>
-                        <!-- Nav-links -->
-                        <ul class="nav-links">
-                            <li class="item"><a class="link location" href="./index.html">Студия</a></li>
-                            <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
-                            <li class="item"><a class="link" href="#">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <!-- Contacts -->
-                    <ul class="contacts-header">
-                        <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <nav class="nav-site">
+                <a class="site" href="./index.html">
+                    <span class="web">Web</span>Studio</a>
+                <!-- Nav-links -->
+                <ul class="nav-links">
+                    <li class="item"><a class="link location" href="./index.html">Студия</a></li>
+                    <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <!-- Contacts -->
+            <ul class="contacts-header">
+                <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+        </div>       
+      </header>
     <main>
         <!-- Herov title -->
         <div class="background-herov">
-            <div class="container">
-                <div class="flex">
-                    <div class="herov">
-                        <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-                        <button type="button" class="button">Заказать услугу</button>
-                    </div>
-                </div>
+            <div class="container herov">
+                <h1 class="title">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="button">Заказать услугу</button>
             </div>
         </div>
         <!-- Company credo -->
         <div class="container">
             <!-- Visually hidden -->
-            <h2 class="visually-hidden">Особености</h2>
-
             <div class="retreat-credo">
+                <h2 class="visually-hidden">Особености</h2>
                 <ul class="credo">
                     <li class="credo-cards">
                         <h3 class="title">Внимание к деталям</h3>

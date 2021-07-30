@@ -53,28 +53,34 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* Flex */
+/* .flex-order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: baseline;
+} */
 
 /* Container */
 .container {
-  /* display: flex; */
   padding: 0 15px;
   margin: 0 auto;
-  align-items: center;
   width: 1200px;
 }
 
-/* Flex */
-.flex {
-  display: flex;
-  align-items: center;
-}
-
+/*  */
 /* Top line */
+/*  */
 
-/* Logo*/
-.background-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
+
+header .container {
+  display: flex;
+}
+
+/* Logo*/
 
 .nav-site {
   display: flex;
@@ -94,6 +100,7 @@ img {
 }
 
 /* Nav-links */
+
 .nav-links {
   display: flex;
   margin-left: 93px;
@@ -135,7 +142,7 @@ img {
 
 .contacts-header .link {
   display: block;
-  padding-top: 12px;
+  padding: 32px 0;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -148,7 +155,9 @@ img {
   color: var(--accent-coolor);
 }
 
+/*  */
 /* Footer */
+/*  */
 
 .background-footer {
   background-color: var(--background-color);
@@ -211,13 +220,12 @@ img {
 
 .herov {
   padding: 200px 0;
-  text-align: center;
-  margin: 0 auto;
 }
 
 .herov .title {
+  text-align: center;
+  margin: 0 auto 30px;
   max-width: 696px;
-  padding-bottom: 30px;
   text-transform: uppercase;
 
   color: var(--primary-white-color);
@@ -227,9 +235,9 @@ img {
 }
 
 .herov .button {
+  display: block;
+  margin: 0 auto;
   padding: 10px 32px;
-  text-align: center;
-
   color: var(--primary-white-color);
   background-color: var(--accent-coolor);
   font-weight: 700;
@@ -256,7 +264,6 @@ img {
 }
 
 .credo-cards {
-  justify-content: space-between;
   width: 270px;
   height: 101px;
 }
@@ -265,7 +272,7 @@ img {
 }
 
 .credo .title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   text-transform: uppercase;
 
   color: var(--primary-color);
