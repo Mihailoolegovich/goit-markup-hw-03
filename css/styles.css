@@ -214,11 +214,11 @@ header .container {
 
 /* Herov title */
 
-.background-herov {
+.herov {
   background-color: var(--background-color);
 }
 
-.herov {
+.herov .container {
   padding: 200px 0;
 }
 
@@ -255,17 +255,19 @@ header .container {
 
 /* Company credo */
 
-.retreat-credo {
+.company-credo .container {
   padding: 94px 0;
 }
 
 .credo {
-  display: flex;
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
 
 .credo-cards {
-  width: 270px;
-  height: 101px;
+  display: bocx;
+  /* width: 270px;
+  height: 101px; */
 }
 .credo-cards:not(:last-child) {
   margin-right: 30px;
@@ -305,7 +307,7 @@ header .container {
 
 .collage {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .direction-img {
@@ -316,7 +318,7 @@ header .container {
   padding-right: 30px;
 } */
 .collage .direction-img + .direction-img {
-  padding-left: 30px;
+  /* margin-left: 30px; */
 }
 
 /* Team */
