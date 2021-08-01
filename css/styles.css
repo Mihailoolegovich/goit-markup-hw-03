@@ -53,13 +53,6 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* Flex */
-/* .flex-order {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: baseline;
-} */
 
 /* Container */
 .container {
@@ -159,10 +152,8 @@ header .container {
 /* Footer */
 /*  */
 
-.background-footer {
+.footer {
   background-color: var(--background-color);
-}
-.retreat-footer {
   padding: 60px 0;
 }
 
@@ -170,9 +161,9 @@ header .container {
   cursor: default;
 }
 
-.retreat-footer .site-footer {
+.footer .site-footer {
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   height: 31px;
 
   color: var(--primary-white-color);
@@ -188,8 +179,12 @@ header .container {
 
 /* Addresses */
 
+.addresses {
+  font-style: normal;
+}
+
 .addresses .map {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   height: 21px;
   color: var(--primary-white-color);
   font-size: 14px;
@@ -205,7 +200,7 @@ header .container {
   height: 21px;
 }
 .links-footer:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 /*  */
@@ -255,25 +250,28 @@ header .container {
 
 /* Company credo */
 
-.company-credo .container {
+.company-credo {
   padding: 94px 0;
 }
 
 .credo {
-  /* display: flex; */
+  display: flex;
   /* justify-content: space-between; */
 }
 
+.credo .credo-cards + .credo-cards {
+  margin-left: 30px;
+}
 .credo-cards {
-  display: bocx;
-  /* width: 270px;
-  height: 101px; */
+  width: 270px;
+  /* height: 101px; */
 }
-.credo-cards:not(:last-child) {
+/* .credo-cards:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 .credo .title {
+  height: 16px;
   margin-bottom: 10px;
   text-transform: uppercase;
 
@@ -284,6 +282,7 @@ header .container {
 }
 
 .credo .text {
+  /* height: 75px; */
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.7;
@@ -291,12 +290,12 @@ header .container {
 
 /* Company direction */
 
-.retreat-direction {
+.company-direction {
   padding-bottom: 82px;
 }
 
-.retreat-direction .titel {
-  padding-bottom: 50px;
+.company-direction .titel {
+  margin-bottom: 50px;
   text-align: center;
 
   color: var(--primary-color);
@@ -307,32 +306,31 @@ header .container {
 
 .collage {
   display: flex;
-  justify-content: space-between;
+
+  /* justify-content: space-between; */
 }
 
-.direction-img {
-  width: 370px;
-  height: 294px;
+.collage .img + .img {
+  margin-left: 30px;
 }
-/* .direction-img:not(:last-child) {
+/*.company-direction .img:not(:last-child) {
   padding-right: 30px;
 } */
-.collage .direction-img + .direction-img {
-  /* margin-left: 30px; */
+
+.company-direction .img {
+  width: 370px;
+  height: 294px;
 }
 
 /* Team */
 
-.background-team {
+.team {
   background-color: #f5f4fa;
-}
-
-.retreat-team {
   padding: 94px 0;
 }
 
-.retreat-team .title {
-  padding-bottom: 50px;
+.team .title {
+  margin-bottom: 50px;
   text-align: center;
 
   color: var(--primary-color);
@@ -343,24 +341,37 @@ header .container {
 
 .cards-team {
   display: flex;
-  justify-content: space-evenly;
-  /*  width: calc((100% - 4 * 30px) / 4);*/
 }
+.cards-team .summary + .summary {
+  margin-left: 30px;
+}
+/* .summary:not(:last-child) {
+  margin-right: 30px;
+} */
 
 .summary {
-  /* height: 368px; */
+  height: 368px;
   box-shadow: var(--shadow-cards);
   border-radius: 0px 0px 4px 4px;
 }
-.summary:not(:last-child) {
-  margin-right: 30px;
+
+.summary img {
+  width: 270px;
+  height: 260px;
+}
+.summary .text {
+  background-color: var(--primary-white-color);
+  padding: 30px 0;
+  border-radius: 0px 0px 4px 4px;
+  /* padding-bottom: 30px; */
 }
 
 .summary .worker {
   height: 19px;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  /* ;
+   */
 
   color: var(--primary-color);
   font-weight: 500;
@@ -370,7 +381,6 @@ header .container {
 
 .summary .position {
   height: 19px;
-  padding-bottom: 30px;
   text-align: center;
   color: var(--primary-text-color);
   font-size: 16px;
