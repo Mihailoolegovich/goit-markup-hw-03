@@ -7,8 +7,10 @@
   --primary-white-color: #ffffff;
   --secondary-background-color: #2f303a;
   --primary-button-color: #f5f4fa;
-  --shadow-cards: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  --shadow-cards-index: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --shadow-cards-portfolio: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 body {
@@ -69,7 +71,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-header .container {
+.header .container {
   display: flex;
 }
 
@@ -196,9 +198,11 @@ header .container {
   font-size: 14px;
   line-height: 1.7;
 }
+
 .links-footer {
   height: 21px;
 }
+
 .links-footer:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -227,6 +231,7 @@ header .container {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
+  letter-spacing: 0.06em;
 }
 
 .herov .button {
@@ -262,6 +267,7 @@ header .container {
 .credo .credo-cards + .credo-cards {
   margin-left: 30px;
 }
+
 .credo-cards {
   width: 270px;
   /* height: 101px; */
@@ -286,6 +292,7 @@ header .container {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 /* Company direction */
@@ -306,7 +313,6 @@ header .container {
 
 .collage {
   display: flex;
-
   /* justify-content: space-between; */
 }
 
@@ -342,6 +348,7 @@ header .container {
 .cards-team {
   display: flex;
 }
+
 .cards-team .summary + .summary {
   margin-left: 30px;
 }
@@ -351,7 +358,7 @@ header .container {
 
 .summary {
   height: 368px;
-  box-shadow: var(--shadow-cards);
+  box-shadow: var(--shadow-cards-index);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -392,14 +399,15 @@ header .container {
 /*  */
 
 /* Buttons */
-.retreat-buttons {
-  padding-top: 94px;
-}
+
 .buttons {
-  /* outline: 2px solid tomato; */
+  padding: 94px 0 34px;
+}
+
+.filling {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 .list-filters:not(:last-child) {
@@ -422,13 +430,15 @@ header .container {
   background-color: var(--accent-coolor);
   color: var(--primary-white-color);
   cursor: pointer;
+  box-shadow: var(--shadow-cards-portfolio);
 }
 
 /* Portfolio */
 
-.retreat-portfolio {
+.portfolio {
   padding-bottom: 94px;
 }
+
 .publication {
   display: flex;
   flex-wrap: wrap;
@@ -445,17 +455,21 @@ header .container {
   margin-right: 0;
 }
 
+.publication .post:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .post {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
 
 .container-post {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 .publication .title {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 
   color: var(--primary-color);
   font-weight: bold;
