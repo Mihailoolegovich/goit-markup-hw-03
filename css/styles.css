@@ -360,6 +360,7 @@ img {
   height: 368px;
   box-shadow: var(--shadow-cards-index);
   border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
 }
 
 .summary img {
@@ -369,8 +370,6 @@ img {
 .summary .text {
   background-color: var(--primary-white-color);
   padding: 30px 0;
-  border-radius: 0px 0px 4px 4px;
-  /* padding-bottom: 30px; */
 }
 
 .summary .worker {
