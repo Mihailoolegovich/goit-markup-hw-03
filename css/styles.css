@@ -215,11 +215,12 @@ img {
 
 .herov {
   background-color: var(--background-color);
-}
-
-.herov .container {
   padding: 200px 0;
 }
+/*
+.herov .container {
+   padding: 200px 0;
+} */
 
 .herov .title {
   text-align: center;
@@ -261,7 +262,6 @@ img {
 
 .credo {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .credo .credo-cards + .credo-cards {
@@ -270,7 +270,7 @@ img {
 
 .credo-cards {
   width: 270px;
-  /* height: 101px; */
+  /* height: 101px;*/
 }
 /* .credo-cards:not(:last-child) {
   margin-right: 30px;
@@ -325,7 +325,6 @@ img {
 
 .company-direction .img {
   width: 370px;
-  height: 294px;
 }
 
 /* Team */
@@ -357,16 +356,11 @@ img {
 } */
 
 .summary {
-  height: 368px;
   box-shadow: var(--shadow-cards-index);
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
 }
 
-.summary img {
-  width: 270px;
-  height: 260px;
-}
 .summary .text {
   background-color: var(--primary-white-color);
   padding: 30px 0;
@@ -399,21 +393,21 @@ img {
 
 /* Buttons */
 
-.buttons {
+.portfolio {
   padding: 94px 0 34px;
 }
 
 .filling {
   display: flex;
   justify-content: center;
-  /* padding-bottom: 50px; */
+  margin-bottom: 34px;
 }
 
 .list-filters:not(:last-child) {
   margin-right: 8px;
 }
 
-.buttons .filter {
+.filling .filter {
   padding: 6px 22px;
   background-color: var(--primary-button-color);
   font-weight: 500;
@@ -423,9 +417,9 @@ img {
   border-radius: 4px;
 }
 
-.buttons .filter:hover,
-.buttons .filter:focus,
-.buttons .location {
+.filling .filter:hover,
+.filling .filter:focus,
+.filling .location {
   background-color: var(--accent-coolor);
   color: var(--primary-white-color);
   cursor: pointer;
@@ -458,12 +452,9 @@ img {
   margin-bottom: 0;
 }
 
-.post {
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-}
-
 .container-post {
+  border: 1px solid #eeeeee;
+  border-top: 0;
   padding: 20px 24px;
 }
 
