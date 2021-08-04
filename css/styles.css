@@ -391,16 +391,16 @@ img {
 /* Content with portfolio */
 /*  */
 
-/* Buttons */
+/* Portfolio */
 
 .portfolio {
-  padding: 94px 0 34px;
+  padding: 94px 0;
 }
 
 .filling {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .list-filters:not(:last-child) {
@@ -426,16 +426,9 @@ img {
   box-shadow: var(--shadow-cards-portfolio);
 }
 
-/* Portfolio */
-
-.portfolio {
-  padding-bottom: 94px;
-}
-
 .publication {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .publication .post {
